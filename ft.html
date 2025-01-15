@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internship AK Studio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .form-container {
+            background: #fff;
+            padding: 20px 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+        }
+        input, select, button {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        input[type="radio"] {
+            width: auto;
+            margin-right: 8px;
+        }
+        button {
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        p {
+            font-size: 14px;
+            color: #666;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h1>Internship AK Studio</h1>
+        <form action="tk.html">
+            <div>
+                <label for="Name">Name</label>
+                <input type="text" id="Name" name="name" placeholder="Enter your name" required>
+            </div>
+            <div>
+                <label for="phone">Contact Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your number" pattern="[0-9]{10}" maxlength="10" required>
+            </div>
+            <div>
+                <label>Gender</label>
+                <input type="radio" id="Male" name="gender" value="Male">
+                <label for="Male">Male</label>
+                <input type="radio" id="Female" name="gender" value="Female">
+                <label for="Female">Female</label>
+            </div>
+            <div>
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+            <div>
+                <label for="college">Which is your college?</label>
+                <select name="college" id="college" required>
+                    <option value="">--- Select the College ---</option>
+                    <option value="SRIST">Shri Ram Group Institute of Technology Jabalpur</option>
+                    <option value="Global">Global College</option>
+                    <option value="Gyan Ganga">Gyan Ganga College</option>
+                </select>
+            </div>
+            <div>
+                <label for="program">Which language do you want to learn?</label>
+                <select name="program" id="program" required>
+                    <option value="">--- Select the Language ---</option>
+                    <option value="C">C Language</option>
+                    <option value="C++">C++ Language</option>
+                    <option value="Java">Java Language</option>
+                    <option value="AI">Artificial Intelligence (AI)</option>
+                </select>
+            </div>
+            <p>Once you submit the form, you cannot return to this page.</p>
+            <button type="submit">Submit the Form</button>
+        </form>
+    </div>
+</body>
+</html>

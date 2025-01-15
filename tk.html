@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Table</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        table {
+            width: 80%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 16px;
+            text-align: left;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        thead {
+            background-color: #007BFF;
+            color: white;
+        }
+        thead th {
+            padding: 12px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        tbody tr:nth-child(odd) {
+            background-color: #f4f4f9;
+        }
+        tbody tr:nth-child(even) {
+            background-color: #ffffff;
+        }
+        tbody td {
+            padding: 12px;
+            border-bottom: 1px solid #ddd;
+        }
+        tbody tr:hover {
+            background-color: #f1f1f1;
+            transition: background-color 0.3s;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Student Details</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Roll Number</th>
+                    <th>Selected Language</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Azaj Khan</td>
+                    <td>0213CS221064</td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>Aryan Patel</td>
+                    <td>0213CS221055</td>
+                    <td>Artificial Intelligence</td>
+                </tr>
+                <tr>
+                    <td>Aziz Amaan Ahmed</td>
+                    <td>0213CS221065</td>
+                    <td>Java</td>
+                </tr>
+                <tr>
+                    <td>Arbaab Khan</td>
+                    <td>0213CS221048</td>
+                    <td>C</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
